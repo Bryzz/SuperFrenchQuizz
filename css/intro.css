@@ -1,0 +1,52 @@
+#introduction .ohno {
+  width: 66%;
+  margin: auto;
+}
+
+#introduction .ohno_first,
+#introduction .ohno_second {
+  font-size: 120px;
+  font-weight: bold;
+  padding: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+#introduction .description div {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#introduction .description div div {
+  display: inline-block;
+  font-weight: bold;
+}
+
+#introduction .buttonStart {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#introduction .buttonStart a {
+  display: block;
+  padding: 10px;
+  background-color: #cccccc;
+  width: fit-content;
+  margin: auto;
+  color: #252525;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+#introduction .buttonStart a:hover {
+  transition: all .2s ease-in-out;
+  font-size: 30px;
+}
+
+#introduction .dramatic {
+  color: #333333;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 50px;
+}

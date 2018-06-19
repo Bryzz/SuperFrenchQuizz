@@ -1,0 +1,36 @@
+html {
+  background-color: #333333;
+}
+
+body {
+  width: 820px;
+  margin: auto;
+  padding: 20px;
+  color: #EDEDED;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+#borderLeft {
+  height: 2000px;
+  border: solid 1px #787878;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+#borderRight {
+  height: 2000px;
+  border: solid 1px #787878;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 840px;
+}
+
+footer {
+  position: fixed;
+  bottom: 5px;
+  width: 800px;
+  font-size: 12px;
+  text-align: center;
+}

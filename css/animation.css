@@ -1,0 +1,63 @@
+@-webkit-keyframes ohnoshake {
+	0% { -webkit-transform: translate(4px, 2px) rotate(0deg); }
+	10% { -webkit-transform: translate(-2px, -4px) rotate(-2deg); }
+	20% { -webkit-transform: translate(-6px, 0px) rotate(2deg); }
+	30% { -webkit-transform: translate(0px, 4px) rotate(0deg); }
+	40% { -webkit-transform: translate(2px, -2px) rotate(2deg); }
+	50% { -webkit-transform: translate(-2px, 4px) rotate(-2deg); }
+	60% { -webkit-transform: translate(-6px, 2px) rotate(0deg); }
+	70% { -webkit-transform: translate(4px, 2px) rotate(-2deg); }
+	80% { -webkit-transform: translate(-2px, -2px) rotate(2deg); }
+	90% { -webkit-transform: translate(4px, 4px) rotate(0deg); }
+	100% { -webkit-transform: translate(2px, -4px) rotate(-2deg); }
+}
+
+#introduction .ohno div {
+  -webkit-animation-name: ohnoshake;
+  -webkit-animation-duration: 0.4s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes descriptionboldanim {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#introduction .description div div {
+  -webkit-animation-name: descriptionboldanim;
+  -webkit-animation-duration: 0.8s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes okdenanim {
+  0% { -webkit-transform: rotate(10deg); }
+  12.5% { -webkit-transform: rotate(5deg) scale(1.2); }
+  25% { -webkit-transform: rotate(0deg) scale(1.4); }
+  37.5% { -webkit-transform: rotate(-5deg) scale(1.2); }
+  50% { -webkit-transform: rotate(-10deg) scale(1.0); }
+  62.5% { -webkit-transform: rotate(-5deg) scale(1.2); }
+  75% { -webkit-transform: rotate(0deg) scale(1.4); }
+  87.5% { -webkit-transform: rotate(5deg) scale(1.2); }
+  100% { -webkit-transform: rotate(10deg) scale(1.0); }
+}
+
+#introduction .buttonStart {
+  -webkit-animation-name: okdenanim;
+  -webkit-animation-duration: 2s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
