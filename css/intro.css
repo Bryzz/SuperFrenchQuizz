@@ -32,6 +32,7 @@
   padding: 10px;
   background-color: #cccccc;
   width: fit-content;
+  width: -moz-fit-content;
   margin: auto;
   color: #252525;
   border-radius: 10px;
@@ -45,8 +46,11 @@
 }
 
 #introduction .dramatic {
-  color: #333333;
-  font-size: 12px;
   text-align: center;
   margin-top: 50px;
+}
+
+#introduction .dramatic a {
+  color: #333333;
+  font-size: 12px;
 }

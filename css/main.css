@@ -27,6 +27,11 @@ body {
   margin-left: 840px;
 }
 
+a,
+a:visited {
+  color: #dddddd;
+}
+
 footer {
   position: fixed;
   bottom: 5px;

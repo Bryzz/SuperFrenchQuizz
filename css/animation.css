@@ -61,3 +61,39 @@
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
+
+@-webkit-keyframes victoryanim {
+	0% { -webkit-transform: rotate(10deg); opacity: 0;}
+  10% { -webkit-transform: rotate(-10deg); opacity: 0.25;}
+	20% { -webkit-transform: rotate(10deg); opacity: 0.5;}
+  30% { -webkit-transform: rotate(-10deg); opacity: 0.75;}
+	40% { -webkit-transform: rotate(10deg); opacity: 1;}
+  50% { -webkit-transform: rotate(-10deg); opacity: 1;}
+	60% { -webkit-transform: rotate(10deg); opacity: 1;}
+  70% { -webkit-transform: rotate(-10deg); opacity: 0.75;}
+	80% { -webkit-transform: rotate(10deg); opacity: 0.5;}
+  90% { -webkit-transform: rotate(-10deg); opacity: 0.25;}
+  100% { -webkit-transform: rotate(10deg); opacity: 0}
+}
+
+.message.victory {
+	-webkit-animation-name: victoryanim;
+  -webkit-animation-duration: 3s;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes failureanim {
+	0% { opacity: 1;}
+	38% { -webkit-transform: rotate(0);}
+  40% { -webkit-transform: rotate(20deg);}
+	70% { -webkit-transform: rotate(15deg); opacity: 1; top: 140px; left: 10px;}
+  100% { -webkit-transform: rotate(200deg); opacity: 0; top: 1200px; left: -50px;}
+}
+
+.message.failure {
+	-webkit-animation-name: failureanim;
+  -webkit-animation-duration: 3s;
+  -webkit-transform-origin:center left;
+  -webkit-animation-timing-function: linear;
+}

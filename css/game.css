@@ -1,0 +1,53 @@
+.score {
+    position: absolute;
+    top: 20px;
+    background-color: #CDD3E0;
+    color: #030303;
+    font-size: 18px;
+    padding: 6px;
+    padding-right: 30px;
+    background-image: url("../img/gummy-bear.png");
+    background-repeat: no-repeat;
+    background-position: 96% 50%;
+    border-radius: 12px;
+}
+
+.score .textScore {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.message {
+  position: relative;
+  top: 140px;
+  width: 800px;
+  left: 10px;
+  text-align: center;
+}
+
+.message.victory {
+  background-color: #CFEFCB;
+  width: 50%;
+  margin: auto;
+  color: #030303;
+  padding: 8px;
+  font-size: 30px;
+  letter-spacing: 5px;
+  border-radius: 10px;
+  border: solid 4px #53994B;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.message.failure {
+  background-color: #BE2121;
+  width: 50%;
+  margin: auto;
+  color: #CFCFCF;
+  padding: 8px;
+  font-size: 30px;
+  border-radius: 10px;
+  border: solid 4px #720404;
+  font-weight: bold;
+  opacity: 0;
+}
