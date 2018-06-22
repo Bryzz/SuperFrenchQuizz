@@ -17,8 +17,8 @@
       <div class="textScore">You got <span class="score_victories">0</span> / <span class="score_victories">0</span></div>
     </div>
 
-    <div class="message victory">
-      <div class="messageText">YOU DID IT !</div>
+    <div class="message">
+      <div class="messageText"></div>
     </div>
 
     <div class="question">
@@ -26,28 +26,19 @@
         Select the right answers !
       </div>
       <div class="content">
-      <!--
-      Gaps
-
-        This text is filled up with <input type="text" class="gap"/>.
-        I wonder how many <input type="text" class="answerForm"/> there are in this <input type="text" class="answerForm"/>.
-
-      -->
-
-      <!--
-      Select list
-
-        What is the right answer ? <select class="answerForm"><option></option><option>Right</option><option>Left</option></select>, I would say.
-        <br/>
-        Am I sure, though ? My, <select class="answerForm"><option></option><option>Yes</option><option>No</option></select> !
-
-      -->
+        <div class="explanations"></div>
+        <div class="questionForm"></div>
       </div>
       <div class="validate">
         Am I good ?
       </div>
     </div>
   </div>
+
+  <script src="js/questionsDataManager.js"></script>
+  <script src="js/questionMaker.js"></script>
+  <script src="js/questionChecker.js"></script>
+  <script src="js/questionEventHandler.js"></script>
 
 </body>
 <footer>

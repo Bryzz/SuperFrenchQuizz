@@ -69,6 +69,13 @@
   color: #ACACAC;
 }
 
+.question .explanations {
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .question .content {
   background-color: #BBC4D7;
   border: solid 2px #7788AB;
