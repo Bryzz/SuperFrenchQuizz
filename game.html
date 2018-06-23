@@ -14,29 +14,45 @@
 
   <div id="questions">
     <div class="score">
-      <div class="textScore">You got <span class="score_victories">0</span> / <span class="score_victories">0</span></div>
+      <div class="textScore">You got <span class="score_victories">0</span> / <span class="score_attempts">0</span></div>
     </div>
 
     <div class="message">
       <div class="messageText"></div>
     </div>
 
-    <div class="question">
+    <div class="alert">
+      You must answer all fields !
+    </div>
+
+    <div class="question hide">
       <div class="type">
         Select the right answers !
       </div>
       <div class="content">
         <div class="explanations"></div>
+        <div class="answers"></div>
         <div class="questionForm"></div>
       </div>
-      <div class="validate">
+      <div id="validate" class="validate">
         Am I good ?
+      </div>
+      <div id="next" class="next">
+        Next one !
       </div>
     </div>
   </div>
 
+  <div id="finalScore">
+    <div class="score_display"></div>
+    <div class="gummybearsList"></div>
+  </div>
+
+  <script src="js/questionDataList.js"></script>
   <script src="js/questionsDataManager.js"></script>
   <script src="js/questionMaker.js"></script>
+  <script src="js/questionProcesser.js"></script>
+  <script src="js/scoreManager.js"></script>
   <script src="js/questionChecker.js"></script>
   <script src="js/questionEventHandler.js"></script>
 

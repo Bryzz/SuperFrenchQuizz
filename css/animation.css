@@ -97,3 +97,17 @@
   -webkit-transform-origin:center left;
   -webkit-animation-timing-function: linear;
 }
+
+@-webkit-keyframes alertanim {
+	0% { opacity: 0; top: 300px;}
+	20% { opacity: 1; top: 380px;}
+	80% { opacity: 1; top: 380px;}
+  100% { opacity: 0; top: 440px;}
+}
+
+.alert.displayAlert {
+	-webkit-animation-name: alertanim;
+  -webkit-animation-duration: 3s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-timing-function: linear;
+}

@@ -17,7 +17,7 @@ function generateGapsQuestion(question) {
     ["Fill in the gaps !"],
     [question[1]],
     [questionContent],
-    [question[3]]
+    question[3]
   ]
   return generatedQuestion;
 }
@@ -39,7 +39,7 @@ function generateSelectQuestion(question) {
     ["Select the right answers !"],
     [question[1]],
     [questionContent],
-    [question[4]]
+    question[4]
   ]
   return generatedQuestion;
 }
@@ -56,7 +56,8 @@ function displayQuestion(generatedQuestion) {
 function generateQuestion() {
   var question = getRandomQuestion();
   if (question == -1) {
-    return "END";
+    displayFinalScore();
+    return;
   }
   var generatedQuestion;
   if (getQuestionType(question) == "gaps") {
@@ -66,11 +67,14 @@ function generateQuestion() {
     generatedQuestion = generateSelectQuestion(question);
   }
   else {
-    console.log("yay");
-    return ["ERROR","An unexpected error occured."];
+    console.log("AN ERROR OCCURED");
   }
   currentQuestion = generatedQuestion;
   displayQuestion(generatedQuestion);
+}
+
+function getAnswer(generatedQuestion, id) {
+  return generatedQuestion[3][id];
 }
 
 generateQuestion();

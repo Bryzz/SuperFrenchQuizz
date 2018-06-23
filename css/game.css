@@ -17,6 +17,38 @@
   vertical-align: middle;
 }
 
+#questions.hide {
+  display: none;
+}
+
+#finalScore {
+  display: none;
+}
+
+#finalScore.display {
+  display: block;
+  background-color: #BBC4D7;
+  border: solid 8px #7788AB;
+  padding: 10px 0px;
+  color: #030303;
+  border-radius: 30px;
+  top: 100px;
+  position: relative;
+}
+
+#finalScore.display .score_display {
+  text-align: center;
+  font-size: 40px;
+}
+
+#finalScore.display .gummybearsList {
+  padding: 30px;
+}
+
+#finalScore.display .gummybearsList .failedGummy {
+  opacity: 0.2;
+}
+
 .message {
   position: relative;
   top: 140px;
@@ -92,7 +124,8 @@
   font-style: italic;
 }
 
-.question .validate {
+.question .validate,
+.question .next {
   display: block;
   width: 200px;
   margin: auto;
@@ -108,8 +141,58 @@
   font-weight: bold;
 }
 
-.question .validate:hover {
+.question .next {
+  display: none;
+  background-color: #6FAE95;
+  border: solid 2px #38765D;
+}
+
+.question .next.display {
+  display: block;
+}
+
+.question .validate.hide {
+  display: none;
+}
+
+.question .validate:hover,
+.question .next:hover {
   -webkit-transition: all 0.3s;
   transform: rotate(5deg);
   cursor: pointer;
+}
+
+.question .answers {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  display: none;
+}
+
+.question .answers.displayAnswers {
+  display: block;
+}
+
+.question .answers .goodAnswer {
+  color: #088021;
+}
+
+.question .answers .wrongAnswer {
+  color: #A6193A;;
+}
+
+.alert {
+  position: relative;
+  top: -400px;
+  font-size: 24px;
+  z-index: 500;
+  margin: auto;
+  width: fit-content;
+  box-shadow: 0px 0px 50px black;
+  display: block;
+  padding: 5px 10px;
+  background-color: #D55B64;
+  border-radius: 10px;
+  border: solid 4px #551015;
+  opacity: 0;
 }
