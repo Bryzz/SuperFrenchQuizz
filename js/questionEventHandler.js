@@ -25,7 +25,7 @@ document.getElementById("next").onclick = function() {
   // Affiche le bouton de soumission
   document.getElementsByClassName("validate")[0].classList.remove("hide");
   // Cache le bouton "Next"
-  document.getElementsByClassName("next")[0].classList.remove("display");*
+  document.getElementsByClassName("next")[0].classList.remove("display");
   // Génère une nouvelle question
   generateQuestion();
 }
